@@ -1,0 +1,13 @@
+http://www.maptiler.org/google-maps-coordinates-tile-bounds-projection/
+
+[12/29/12 11:34:52 PM] Steph N: The upper left tile is 601/1280[12/29/12 11:35:06 PM] Steph N: the lower right tile is 605/1277
+
+-74.35546875  41.11246878918085 -73.4765625 40.58058466412761
+
+gdal_translate -of GTiff -a_srs EPSG:3857 -a_ullr -74.35546875 41.11246878918085 -73.4765625 40.58058466412761 urb_LL.tiff urb_LL.geo.tiff
+
+gdal_translate -of GTiff -a_srs EPSG:3857 -a_ullr -74.35546875 41.11246878918085 -73.4765625 40.58058466412761 urb_HL.tiff urb_HL.geo.tiff
+
+gdal_translate -of GTiff -a_srs EPSG:3857 -a_ullr -74.35546875 41.11246878918085 -73.4765625 40.58058466412761 veg_HL.tiff veg_HL.geo.tiff
+
+gdal_translate -of GTiff -a_srs EPSG:3857 -a_ullr -74.35546875 41.11246878918085 -73.4765625 40.58058466412761 veg_LL.tiff veg_LL.geo.tiff
